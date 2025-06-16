@@ -12,6 +12,7 @@ load_dotenv()
 
 USERNAME = os.getenv("USERNAME")
 PASSWORD = os.getenv("PASSWORD")
+PROXY = os.getenv("PROXY")
 MAX_TIME_LOAD = 20
 MIN_TIME_LOAD = 2
 
@@ -63,6 +64,8 @@ class InstaFollower:
         self.password = password
         chrome_options = webdriver.ChromeOptions()
         chrome_options.add_experimental_option("detach", True)
+        if PROXY:
+            chrome_options.add_argument(f"--proxy-server={PROXY}")
         self.driver = webdriver.Chrome(options=chrome_options)
 
     def close_browser(self):

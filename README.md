@@ -47,6 +47,10 @@ usuario2,clave2
 
 Si `credentials.txt` existe, el bot utilizará todas las cuentas secuencialmente. De lo contrario, usará las variables del `.env`.
 
+### Uso de proxy
+
+Si necesitas utilizar un proxy para conectarte a Instagram puedes definir la variable `PROXY` en el archivo `.env` con el formato `http://usuario:clave@host:puerto`. El bot configurará automáticamente Chrome para usar este proxy.
+
 
 ## Ejecución
 
