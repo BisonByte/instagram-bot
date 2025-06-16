@@ -9,10 +9,18 @@ El bot utiliza la libreria de Selenium para interactuar con la plataforma. Puede
 ## Instalación
 
 1. Clona este repositorio en tu máquina local:
-
+```
+git clone https://github.com/usuario/instagram-bot.git
+cd instagram-bot
+```
 
 2. Instala las dependencias del proyecto:
 
+```
+python -m venv venv
+source venv/bin/activate  # En Windows usa venv\Scripts\activate
+python -m pip install -r requirements.txt
+```
 
 ## Configuración
 
@@ -39,9 +47,13 @@ usuario2,clave2
 
 Si `credentials.txt` existe, el bot utilizará todas las cuentas secuencialmente. De lo contrario, usará las variables del `.env`.
 
+
 ## Ejecución
+
+Para iniciar el bot ejecuta:
 
 ```
 python main.py
-
 ```
+
+Se abrirá una ventana del navegador y el bot comenzará a realizar las acciones configuradas.
