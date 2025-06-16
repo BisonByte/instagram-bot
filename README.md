@@ -61,3 +61,17 @@ python main.py
 ```
 
 Se abrirá una ventana del navegador y el bot comenzará a realizar las acciones configuradas.
+
+## Solución de problemas
+
+Si al ejecutar `python main.py` aparece un mensaje parecido a
+```
+ModuleNotFoundError: No module named 'selenium'
+```
+significa que las dependencias aún no se han instalado.
+Ejecuta el siguiente comando dentro de tu entorno virtual para instalar todo lo necesario:
+
+```
+python -m pip install -r requirements.txt
+```
+
