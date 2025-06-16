@@ -16,7 +16,12 @@ El bot utiliza la libreria de Selenium para interactuar con la plataforma. Puede
 
 ## Configuración
 
-Antes de ejecutar el bot, debes configurar tus credenciales de Instagram en el archivo `.env`. Asegúrate de incluir tu nombre de usuario y contraseña de Instagram.
+Antes de ejecutar el bot puedes configurar las credenciales de dos maneras:
+
+1. Usando un archivo `.env` con un único usuario.
+2. Creando un archivo `credentials.txt` con varias cuentas, una por línea.
+
+Ejemplo del archivo `.env`:
 
 ```python
 # .env
@@ -24,6 +29,15 @@ Antes de ejecutar el bot, debes configurar tus credenciales de Instagram en el a
 USERNAME = 'tu_nombre_de_usuario'
 PASSWORD = 'tu_contraseña'
 ```
+
+Formato de `credentials.txt`:
+
+```
+usuario1,clave1
+usuario2,clave2
+```
+
+Si `credentials.txt` existe, el bot utilizará todas las cuentas secuencialmente. De lo contrario, usará las variables del `.env`.
 
 ## Ejecución
 
