@@ -34,8 +34,8 @@ Ejemplo del archivo `.env`:
 ```python
 # .env
 
-USERNAME = 'tu_nombre_de_usuario'
-PASSWORD = 'tu_contraseña'
+USUARIO = 'tu_nombre_de_usuario'
+CONTRASENA = 'tu_contraseña'
 ```
 
 Formato de `credentials.txt`:
