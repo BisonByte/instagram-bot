@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Bot</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: auto;
+            padding: 1em;
+        }
+        label {
+            display: block;
+            margin-top: 1em;
+        }
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 0.5em;
+            box-sizing: border-box;
+        }
+        .actions {
+            margin-top: 1em;
+        }
+        button {
+            padding: 0.5em 1em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Instagram Bot</h1>
+    <form action="/run" method="post">
+        <label>Usuario
+            <input type="text" name="usuario" required>
+        </label>
+        <label>Contraseña
+            <input type="password" name="clave" required>
+        </label>
+        <label>Proxy (opcional)
+            <input type="text" name="proxy">
+        </label>
+        <label>Cuenta objetivo para seguir seguidores
+            <input type="text" name="target" placeholder="leomessi" required>
+        </label>
+        <label>
+            <input type="checkbox" name="like_post" value="1">
+            Dar like a la publicación de ejemplo
+        </label>
+        <label>
+            <input type="checkbox" name="seguir_followers" value="1" checked>
+            Seguir seguidores de la cuenta objetivo
+        </label>
+        <div class="actions">
+            <button type="submit">Ejecutar Bot</button>
+        </div>
+    </form>
+</body>
+</html>
